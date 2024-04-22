@@ -1,0 +1,104 @@
+body {
+    font-family: "Helvetica", serif;
+
+}
+h1 {
+    text-align:center;
+}
+
+
+a:link {
+    color: #008000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #008000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000099;
+    text-decoration: none;
+}
+
+a:active{
+    color: red;
+    text-decoration: none;
+}
+
+.endbar {
+            background-color: #f0f0f0; /* Background color */
+             position:fixed;
+             bottom:0;
+            padding: 10px 0; /* Padding top and bottom */
+            text-align: center; /* Center align text */
+        }
+
+        .endbar a {
+            color: #333; /* Link color */
+            margin: 0 10px; /* Margin for links */
+            text-decoration: none; /* Remove underline */
+            display: inline-block;
+        }
+         /* Default padding */
+        .content {
+            padding-left: 30vw; /* Padding based on viewport width */
+            padding-right: 30vw;
+        }
+
+        /* Media query for screens smaller than 600px */
+        @media screen and (max-width: 600px) {
+            .content {
+                padding-left: calc(10vw - 2px); /* Adjusted padding for smaller screens */
+                padding-right: calc(10vw - 2px);
+            }
+        }
+
+        /* Media query for screens smaller than 400px */
+        @media screen and (max-width: 400px) {
+            .content {
+                padding-left: 0; /* Padding reduced to 0 for screens smaller than 400px */
+                padding-right: 0;
+            }
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: white; /* Background color white */
+            overflow: hidden;
+            text-align: left; /* Left align text */
+            padding: 0 10vw; /* Add horizontal padding */
+        }
+
+        .navbar a {
+            display: inline-block; /* Display links inline */
+            color: black; /* Link color */
+            text-align: center;
+            padding: 14px 20px; /* Link padding */
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd; /* Hover background color */
+            color: black; /* Hover text color */
+        }
+
+        hr {
+            margin: 0; /* Remove default margin */
+            border: 0; /* Remove default border */
+            border-top: 2px solid #ccc; /* Add top border */
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .navbar {
+                padding: 0; /* Remove horizontal padding for smaller screens */
+            }
+            .navbar a {
+                display: block; /* Change display to block for smaller screens */
+                text-align: center; /* Center align text */
+            }
+        }
+
+
